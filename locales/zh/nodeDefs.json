@@ -1,0 +1,41 @@
+{
+    "YCYY_DeepInfra_ImageGenerator": {
+        "description": "使用 DeepInfra API 生成图像",
+        "display_name": "浥尘 DeepInfra 图像生成",
+        "inputs": {
+            "prompt": {
+                "name": "提示词",
+                "tooltip": "英文提示词"
+            },
+            "model": {
+                "name": "模型",
+                "tooltip": "模型选择"
+            },
+            "seed": {
+                "name": "种子",
+                "tooltip": "生成噪波的随机种子"
+            },
+            "width": {
+                "name": "宽度",
+                "tooltip": "图像宽度"
+            },
+            "height": {
+                "name": "高度",
+                "tooltip": "图像高度"
+            },
+            "prompt_upsampling": {
+                "name": "提示词增强",
+                "tooltip": "是否启用提示词增强"
+            },
+            "safety_tolerance": {
+                "name": "安全限度",
+                "tooltip": "安全限度范围，从0到6，越低越安全"
+            }
+        },
+        "outputs": {
+            "0": {
+                "name": "图像"
+            }
+        }
+    }
+}

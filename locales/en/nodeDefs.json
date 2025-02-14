@@ -1,0 +1,34 @@
+{
+    "YCYY_DeepInfra_ImageGenerator": {
+        "description": "Generates an image using the DeepInfra API",
+        "display_name": "YCYY DeepInfra ImageGenerator",
+        "inputs": {
+            "prompt": {
+                "name": "prompt"
+            },
+            "model": {
+                "name": "model"
+            },
+            "seed": {
+                "name": "seed"
+            },
+            "width": {
+                "name": "width"
+            },
+            "height": {
+                "name": "height"
+            },
+            "prompt_upsampling": {
+                "name": "prompt_upsampling"
+            },
+            "safety_tolerance": {
+                "name": "safety_tolerance"
+            }
+        },
+        "outputs": {
+            "0": {
+                "name": "image"
+            }
+        }
+    }
+}
