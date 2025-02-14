@@ -68,12 +68,6 @@ class DeepInfraImageGenerator:
             print(response_json)
         else:
             raise ValueError("unable to generate image")
-        # response = {
-        #     "request_id": "R7j5MkXBEzbygezLsm7adEsr",
-        #     "inference_status": {"runtime_ms": 5519, "cost": 0.0},
-        #     "status": "ok",
-        #     "image_url": "https://pics7.baidu.com/feed/dc54564e9258d10948be1d591771afb06d814db1.jpeg@f_auto?token=c285d94b364bf30a6028c2d636c79fe9"
-        # }
         image_url = response_json['image_url']
         try:
             image_response = requests.get(image_url)
