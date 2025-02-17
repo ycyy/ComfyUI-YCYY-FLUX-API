@@ -1,7 +1,7 @@
 {
-    "YCYY_DeepInfra_ImageGenerator": {
+    "YCYY_DeepInfra_TextToImage": {
         "description": "使用 DeepInfra API 生成图像",
-        "display_name": "浥尘 DeepInfra 图像生成",
+        "display_name": "浥尘 DeepInfra 文生图",
         "inputs": {
             "prompt": {
                 "name": "提示词",
@@ -29,7 +29,54 @@
             },
             "safety_tolerance": {
                 "name": "安全限度",
-                "tooltip": "安全限度范围，从0到6，越低越安全"
+                "tooltip": "输入和输出审查的容忍度级别。范围为 0 到 6，0 为最严格，6 为最宽松。"
+            }
+        },
+        "outputs": {
+            "0": {
+                "name": "图像"
+            }
+        }
+    },
+    "YCYY_SiliconFlow_TextToImage": {
+        "description": "使用硅基流动 API 生成图像",
+        "display_name": "浥尘硅基流动API文生图",
+        "inputs": {
+            "prompt": {
+                "name": "提示词",
+                "tooltip": "英文提示词"
+            },
+            "model": {
+                "name": "模型",
+                "tooltip": "模型选择"
+            },
+            "seed": {
+                "name": "种子",
+                "tooltip": "生成噪波的随机种子"
+            },
+            "width": {
+                "name": "宽度",
+                "tooltip": "图像宽度"
+            },
+            "height": {
+                "name": "高度",
+                "tooltip": "图像高度"
+            },
+            "steps": {
+                "name": "步数",
+                "tooltip": "生成图像的步骤数"
+            },
+            "guidance":{
+                "name": "引导",
+                "tooltip": "控制生成图像与给定提示（Prompt）的匹配程度，越高越匹配提示词"
+            },
+            "prompt_upsampling": {
+                "name": "提示词增强",
+                "tooltip": "是否启用提示词增强"
+            },
+            "safety_tolerance": {
+                "name": "安全限度",
+                "tooltip": "输入和输出审查的容忍度级别。范围为 0 到 6，0 为最严格，6 为最宽松。"
             }
         },
         "outputs": {

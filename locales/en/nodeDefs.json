@@ -1,5 +1,5 @@
 {
-    "YCYY_DeepInfra_ImageGenerator": {
+    "YCYY_DeepInfra_TextToImage": {
         "description": "Generates an image using the DeepInfra API",
         "display_name": "YCYY DeepInfra ImageGenerator",
         "inputs": {
@@ -17,6 +17,44 @@
             },
             "height": {
                 "name": "height"
+            },
+            "prompt_upsampling": {
+                "name": "prompt_upsampling"
+            },
+            "safety_tolerance": {
+                "name": "safety_tolerance"
+            }
+        },
+        "outputs": {
+            "0": {
+                "name": "image"
+            }
+        }
+    },
+    "YCYY_SiliconFlow_TextToImage": {
+        "description": "Generates an image using the SiliconFlow API",
+        "display_name": "YCYY SiliconFlow TextToImage",
+        "inputs": {
+            "prompt": {
+                "name": "prompt"
+            },
+            "model": {
+                "name": "model"
+            },
+            "seed": {
+                "name": "seed"
+            },
+            "width": {
+                "name": "width"
+            },
+            "height": {
+                "name": "height"
+            },
+            "steps": {
+                "name": "steps"
+            },
+            "guidance":{
+                "name": "guidance"
             },
             "prompt_upsampling": {
                 "name": "prompt_upsampling"
