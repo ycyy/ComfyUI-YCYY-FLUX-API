@@ -103,7 +103,7 @@ class SiliconFlowTextToImage:
 
     FUNCTION = "siliconFlowTextToImage"
     CATEGORY = "YCYY/fluxapi"
-    DESCRIPTION = "Generates an image using the DeepInfra API"
+    DESCRIPTION = "Generates an image using the SiliconFlow API"
     def siliconFlowTextToImage(self,prompt,model,seed,width,height,steps,guidance,prompt_upsampling,safety_tolerance):
         try:
             api_key = config["API"]["SILICONFLOW_API_KEY"]
